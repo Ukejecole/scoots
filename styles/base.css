@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+/* ----------------------------- Header --------------------------- */
+header {
+    background: #806044;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 0;
+    text-align: end;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 2;
+  }
+  
+  header img {
+    width: 50px;
+  }
+  nav ul {
+    justify-content: space-evenly;
+    display: flex;
+    display: none;
+  }
+  .open ul {
+    position: absolute;
+    background-color:#806044;
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    left: 0;
+    margin-top: 28px;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 300ms linear;
+  }
+  
+  .visuallyhidden {
+    opacity: 0;
+  }
+  
+  #ham {
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #806044;
+    border: 1px solid #806044;
+  }
+  
+  #ham:hover {
+    background-color: #806044;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all 500ms ease-in-out;
+  }
+  
+  ul li a:hover {
+    background-color: white;
+    color: #806044;
+  }
+  
+  ul li .active {
+    background-color: white;
+    color: #806044;
+  }
+  ul li a:active {
+    background-color: white;
+    color: #806044;
+  }
+  /* ---------------------------- ScrollBar ------------------------------------ */
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #806044;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #806044;
+    outline: none;
+  }
+    /* <!-- ------------------------------View Reservation ------------------------ --> */
+
+.reserve-hero {
+  height: 551px;
+  background: url(../images/hari-nandakumar-prRb5I_4MAw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reserve-trans-banner {
+  height: 293px;
+  background: #806044;
+  position: relative;
+  margin: 0 auto;
+  left: 1%;
+  top: 100px;
+  text-align: center;
+  width: 400px;
+  padding: 55px 20px 0 20px;
+}
+
+.reserve-trans-banner h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.reserve-trans-banner p {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 10px 0 0 0;
+}
+
+.make-reservation {
+  display: block;
+  width: 160px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 0;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.make-reservation:hover {
+  border: 2px dotted #806044;
+  background-color: white;
+  color: #806044;
+  cursor: pointer;
+}
+/* <!-- ------------------------------Won't Miss Home Section ------------------------ --> */
+
+.temple-hero {
+  height: 551px;
+  background: url(../images/martin-katler-BINP5KAaj6E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.temple-trans-banner {
+  background: #806044;
+  position: relative;
+  top: 100px;
+  left: 15%;
+  width: 270px;
+  height: 220px;
+  padding: 45px 30px 30px 30px;
+}
+
+.temple-trans-banner h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.temple-trans-banner p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px 0 0 0;
+}
+
+.view-temps {
+  margin: 0;
+  text-align: center;
+}
+  /* <---------------------------Home Hero ------------------------------------> */
+
+div.hero {
+  height: 950px;
+  width: 100%;
+  background-image: url("../images/IMG_7142.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 97px;
+}
+.hero-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.transhero {
+  width: 100%;
+  height: 270px;
+  padding: 55px 0 0 0;
+  background: #806044;
+  border-radius: 0px 292px 0px 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Javanese Text", serif;
+  font-weight: 400;
+  color: white;
+}
+
+p,
+a,
+li,
+label {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.transhero h1 {
+  margin: 0;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 123px;
+  padding-left: 15px;
+}
+
+.hero-socials img {
+  width: 32px;
+}
+
+.hero-socials :nth-child(2) {
+  padding-left: 15px;
+}
+
+.hero-socials {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.transhero h2 {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 66px;
+  padding-left: 15px;
+  margin: -55px 0 0 0;
+}
+
+.transhero p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  padding-left: 15px;
+  width: 270px;
+  margin: -5px 0 0 0;
+}
+  /* <--------------------------- Weather ------------------------------------> */
+
+.weather-container {
+    background: #806044;
+    height: 500px;
+    width: 90%;
+    margin: 75px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .weather-today {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+  }
+  
+  .todays-date {
+    text-align: right;
+    padding-right: 10px;
+    justify-self: start;
+  }
+  .todays-date h3 {
+    font-style: normal;
+    font-size: 42px;
+    line-height: 141px;
+    margin: 0;
+  }
+  .todays-date h4 {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 54px;
+    margin: -60px 0 0 0;
+  }
+  .weather-underline {
+    border-right: 3px dotted black;
+    height: 80%;
+  }
+  
+  .todays-temp {
+    text-align: center;
+    width: 150px;
+  }
+  
+  .todays-temp h4 {
+    margin-top: 41px;
+    font-size: 35px;
+  }
+  .todays-temp :nth-child(2) {
+    margin: -40px 0 0 0;
+    font-size: 13px;
+  }
+  .todays-temp :nth-child(3) {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+  }
+  
+  .weather-future {
+    justify-self: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 14px;
+    width: 100%;
+    justify-items: center;
+  }
+  
+  .next-day h4 {
+    font-size: 18px;
+    margin: 20px 0 0 0;
+  }
+  .next-day h5 {
+    font-size: 23px;
+    margin: -1px 0 -2px 0;
+  }
+  .next-day p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+/* 
+----------------------------Make Reservation ------------------------------- */
+.select-temple {
+  background: #806044;
+}
+
+.selection-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 10px;
+  padding: 15px 45px;
+}
+
+.selection h3 {
+  margin: 10px 0 10px 0;
+  font-size: 27px;
+}
+
+#temple-list {
+  padding: 10px 45px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #fff;
+}
+
+#temple-list option {
+  background-color: #806044;
+}
+
+.selection-info h3 {
+  margin: 25px 0 0 0;
+  font-size: 20px;
+}
+
+.selection-info :nth-child(2) {
+  margin: 5px 0 0 0;
+  font-size: 15px;
+}
+
+.selection-info :nth-child(3) {
+  margin: 5px 0 0 0;
+  font-size: 15px;
+  text-align: right;
+}
+
+.selection-grid img {
+  margin-top: 15px;
+  width: 200px;
+}
+
+  /* <!-- ------------------------------Footer------------------------ --> */
+
+footer {
+  background: #806044;
+}
+.footer-container {
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0;
+  grid-gap: 30px;
+  width: 90%;
+}
+.footer-address-display {
+  margin-top: 60px;
+}
+
+.footer-form h3,
+.footer-address-display h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-form label {
+  font-size: 15px;
+}
+
+.footer-form label,
+.footer-form input,
+.footer-form textarea {
+  display: block;
+  font-family: "Jaldi", sans-serif;
+}
+.footer-form label input,
+.footer-form textarea {
+  margin-top: 5px;
+  border-radius: 3px;
+  width: 300px;
+  border: none;
+}
+
+.footer-form label input {
+  height: 32px;
+}
+
+.footer-form-button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 7px 0;
+  width: 300px;
+  color: #fff;
+}
+
+.footer-form-button:hover {
+  background-color: white;
+  color: #806044;
+}
+
+.footer-form label {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-socials {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  margin-top: 25px;
+}
+
+.footer-socials img,
+.footer-socials a {
+  width: 30px;
+}
+
+.footer-address,
+.footer-phone {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-top: 15px;
+}
+
+.footer-address img,
+.footer-phone img {
+  width: 30px;
+  align-self: center;
+}
+
+.footer-address p,
+.footer-phone p {
+  font-size: 15px;
+  width: 182px;
+}
+
+.copyright {
+  font-size: 15px;
+  text-align: center;
+  grid-column: 1/3;
+}
+
+.weather {
+  font-size: 15px;
+  text-align: center;
+  grid-column: 1/3;
+}
+/*<---------------------------------------------RESERVATION PAGE!---------------------------->*/
+.reserver-form-container {
+  background: #806044;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.85);
+  margin: 0 auto 120px auto;
+  padding: 45px 0;
+}
+
+.reserver-form-container h3 {
+  text-align: center;
+  font-size: 28px;
+}
+.reserver-form {
+  padding-left: 20px;
+}
+.reserver-form input:required {
+  border-right: 5px solid red;
+  border-left: 5px solid red;
+}
+
+.reserver-form input:required:valid {
+  border-right: 5px solid rgb(60, 190, 0);
+  border-left: 5px solid rgb(60, 190, 0);
+}
+.reserver-form label,
+.reserver-form input,
+.reserver-form textarea,
+.reserver-form select {
+  display: block;
+}
+
+.reserver-form input,
+.reserver-form textarea,
+.reserver-form select {
+  width: 90%;
+}
+
+.reserver-form label {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.reserver-form label input,
+.reserver-form textarea {
+  margin-top: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+}
+
+.reserver-form label input {
+  height: 32px;
+  color: #e5e918;
+}
+
+.reserver-container {
+  padding-top: 118px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.reserver-container h3 {
+  font-size: 27px;
+  margin-top: 0;
+}
+.reserver-container h2 {
+  font-size: 27px;
+  margin-top: 0;
+  background: #806044;
+  text-align: center;
+}
+
+.reserver-container h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.form-rental-type {
+  padding: 5px 0 5px 0;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+}
+
+.form-rental-type option {
+  background-color: rgba(59, 56, 7, 0.9);
+}
+
+.reserved-button {
+  background-color: transparent;
+  padding: 10px 0;
+  width: 100%;
+  border: 2px solid rgba(224, 212, 38, 0.205);
+  font-size: 17px;
+}
+
+.reserved-button:hover {
+  background-color: white;
+  color: rgba(80, 75, 10, 0.9);
+}
+.reserver-container-1{
+  background: #806044;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.85);
+  padding: 45px 0;
+  margin: 0 auto 120px auto;
+}
+/*******************************************************CONACT US***************************************/
+.contact-hero {
+  height: 551px;
+  background: url(../images/quino-al-xhGMQ_nYWqU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact-trans-banner {
+  background: #806044;
+  position: relative;
+  top: 100px;
+  left: 15%;
+  width: 200px;
+  height: 180px;
+  padding: 45px 30px 30px 30px;
+}
+
+.contact-trans-banner h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.contact-trans-banner p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px 0 0 0;
+}
+
+.view-temps {
+  margin: 0;
+  text-align: relative;
+}
+
+/* Add the existing styles along with the following additions */
+
+/* Contact Information and Map */
+.contact-info {
+  background-color: #806044;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.locations {
+  margin-top: 15px;
+}
+
+.locations h3 {
+  margin-bottom: 10px;
+}
+
+.locations p {
+  margin-bottom: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #806044;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+/* Add the following styles for the FAQ dropdown */
+
+.faq {
+  margin-top: 20px;
+}
+.faq
+details {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+summary:hover {
+  background-color: #e0e0e0;
+}
+
+/* Adjust the content appearance within the dropdown */
+details p {
+  padding: 10px;
+  background-color: #806044;
+}
+
+/* Responsive Design */
+/* You can adjust these media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/******************************************RENTALS PAGE***************************************/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,177 @@
+@media only screen and (min-width: 545px) {
+    .hero-container {
+      padding-top: 120px;
+    }
+  
+    .transhero {
+      width: 545px;
+      height: 300px;
+      padding: 55px 0 0 0;
+      background: rgba(224, 212, 38, 0.9);
+      border-radius: 0px 292px 0px 0px;
+    }
+  
+    .hero-socials {
+      padding-left: 35px;
+    }
+    .transhero h1 {
+      font-size: 45px;
+      padding-left: 35px;
+    }
+  
+    .transhero h2 {
+      font-size: 25px;
+      padding-left: 35px;
+      margin: -45px 0 0 0;
+    }
+  
+    .transhero p {
+      font-size: 14px;
+  
+      padding-left: 35px;
+      width: 410px;
+      margin: 0;
+    }
+  
+    .select-temple {
+      padding-top: 15px;
+    }
+  
+    .selection-grid {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  
+    #temple-list {
+      padding: 5px 25px;
+    }
+    .selection-info {
+      width: 250px;
+    }
+    .selection-info h3 {
+      margin: 10px 0 0 0;
+      font-size: 22px;
+    }
+  
+    .selection-grid img {
+      width: 50%;
+      align-self: center;
+      margin-top: 0;
+    }
+  
+    .temple-trans-banner {
+      left: 10%;
+      width: 350px;
+      padding: 45px 65px;
+    }
+  
+    .temple-trans-banner h3 {
+      font-size: 30px;
+    }
+  
+    .temple-trans-banner p {
+      font-size: 15px;
+      line-height: 29px;
+    }
+  
+    .reserve-trans-banner {
+      height: 436px;
+      top: 100px;
+      left: 1%;
+      width: 420px;
+      height: 220px;
+      padding: 45px 15px 55px 15px;
+    }
+  
+    .reserve-trans-banner h3 {
+      font-size: 30px;
+    }
+  
+    .reserve-trans-banner p {
+      font-size: 15px;
+    }
+  
+    .make-reservation {
+      width: 233px;
+      font-size: 19px;
+    }
+  
+    /* <!-- ------------------------------Footer------------------------ --> */
+    .footer-container {
+      width: 540px;
+      display: block;
+      margin: 0 auto;
+    }
+    .footer-address-display {
+      margin-top: 0px;
+    }
+    .footer-form label input {
+      height: 25px;
+    }
+    .footer-container {
+      padding: 60px 0;
+    }
+    .footer-form h3,
+    .footer-address-display h3 {
+      font-size: 27px;
+    }
+    .copyright {
+      font-size: 20px;
+    }
+    /* <!-- ------------------------------Temple Page------------------------ --> */
+  
+    .temples-container {
+      width: 600px;
+    }
+  
+    /* <!-- ------------------------------Reservation Page------------------------ --> */
+    .temple-reservation-form-container {
+      width: 90%;
+    }
+  
+    .reservation-form {
+      padding-left: 50px;
+    }
+    .reservation-container h3 {
+      font-size: 30px;
+      margin-top: 0;
+    }
+    .reservation-form textarea,
+    .reservation-form select {
+      width: 300px;
+    }
+    .reservation-container {
+      padding-top: 118px;
+      width: 79%;
+      margin: 0 auto;
+    }
+    .reservation-form input,
+    .reservation-form textarea,
+    .reservation-form select {
+      width: 300px;
+    }
+  
+    /* <!-- ------------------------------Services Page------------------------ --> */
+    .services-grid {
+      grid-template-columns: 1fr;
+      width: 500px;
+      margin: 0 auto;
+      grid-gap: 45px;
+    }
+    .services-container {
+      width: 500px;
+      padding-top: 118px;
+    }
+    .special-amenities {
+      width: 400px;
+    }
+    .free-amenities {
+      width: 300px;
+    }
+    .contact-container {
+      width: 450px;
+      padding: 55px 30px 75px 30px;
+    }
+  }
