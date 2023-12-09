@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoots</title>
+    <meta name="description" content="Scoots- Scooter rental company website"/>
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/scoots_logo-removebg-preview.png" alt="Background Image" />
+      <nav class="primary">
+        <button id="ham">&#9776;</button>
+        <ul id="menu" class="visuallyhidden">
+          <li><a id="home" href="./index.html">Home</a></li>
+          <li><a id="rentals" href="./rentals.html">Rentals</a></li>
+          <li>
+            <a id="reservation" href="#">Reservations</a>
+          </li>
+          <li><a id="contact" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="reserver-main">
+        <div class="reserver-container">
+            <h2>Rental Services and Agreements</h2>
+            <section>
+              <div class="reserver-container-1">
+                <ul>
+                  <li>A $50 security deposit is required to confirm reservations.</li>
+                  <li>A valid drivers license is required in hand at the time of rental.</li>
+                  <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                  <li>Fuel charge is not included.</li>
+                  <li>Unlimited mileage.</li>
+                  <li>Liability insurance is included.</li>
+                  <li>Damage insurance is available for purchase.</li>
+                  <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                  <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                  <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </section>
+            <div class="reserver-form-container">
+              <h3>Reservations</h3>
+              <form class="reserver-form" action="./reversed.html" method="get">
+                <label>
+                  First Name
+                  <input
+                  type="text"
+                  name="firstname"
+                  pattern="^[A-Za-z -]{1,}$"
+                  required
+                  /><label>
+                    Last Name
+                    <input
+                    type="text"
+                    name="lastname"
+                    pattern="^[A-Za-z -]{1,}$"
+                    required
+                    /></label>
+                    <label>Email <input type="email" name="email"></label>
+                    <label>
+                      Phone Number
+                      <input type="tel" name="telephone" pattern="^[0-9]{5,}$" required>
+                    </label>
+                    <label>
+                      Country
+                      <input
+                      type="text"
+                      name="hometown"
+                      pattern="^[A-Za-z -]{1,}$" 
+                      required
+                    /></label>
+                    <label>
+                      Rental type
+                      <select class="form-rental-type" name="rental">
+                      <option value="Scooters">Honda Metropolitan (49cc) -1 person</option>
+                      <option value="Scooters">Honda Dio (110cc) - 2 person</option>
+                      <option value="Scooters">Honda PCX150 (149cc) 2 person</option>
+                      <option value="Side-by-side ATV">Honda Pioneer 1000- 4 person</option>
+                      <option value="Jeep">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
+                      <option value="Jeep">Jeep Wrangler - 2 door- open air- manual- 4 person</option>
+                      </select></label>
+                      <label> Date <input type="date" name="date" required></label>
+                      <label>
+                        Drop-off Location
+                        <input
+                        type="text"
+                        name="location"
+                        pattern="^[A-Za-z -]{1,}$"
+                        required
+                        /></label>
+                      <label>
+                        Period
+                        <select name="period">
+                          <option value="Period">Half Day (3 hrs)</option>
+                          <option value="Period">Full Day</option>
+                        </select></label>
+                        <label>
+                          Cruise Line
+                          <input
+                          type="text"
+                          name="cruiseline"
+                          pattern="^[A-Za-z -]{1,}$"
+                          required
+                          /></label>
+                        <label>
+                          Special Accommodations
+                          <textarea name="accommodation" cols="30" rows="5"></textarea>
+                        </label>
+                        <input
+                        class="reserved-button"
+                        type="submit"
+                        value="Make a Reservation"
+                        />
+                        </label>
+                      </label>
+                    </label>
+                </label>
+              </form>
+            </div>
+      </main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-form">
+            <h3>Contact Us</h3>
+            <form action="./thankyou.html" method="get">
+              <label>
+                FULL-NAME <input type="text" name="fullname" required
+              /></label>
+              <label> E-MAIL <input type="email" name="email" required /></label>
+              <label>
+                YOUR MESSAGE
+                <textarea
+                  name="contact-message"
+                  cols="30"
+                  rows="5"
+                  required
+                ></textarea>
+              </label>
+              <input
+                class="footer-form-button"
+                type="submit"
+                value="Send Message"
+              />
+            </form>
+          </div>
+          <div class="footer-address-display">
+            <h3>SCOOTS</h3>
+            <div class="footer-socials">
+              <a href="http://facebook.com" target="_blank"
+                ><img src="./images/Facebook.png" alt="facebook"
+              /></a>
+              <a href="http://instagram.com" target="_blank"
+                ><img src="./images/Instagram.png" alt="instagram"
+              /></a>
+            </div>
+            <div class="footer-address">
+              <img src="./images/location-icon.png" alt="location" />
+              <p>
+                Cozumel, Quintana Roo, Mexico
+              </p>
+            </div>
+            <div class="footer-phone">
+              <img src="./images/phone-icon.png" alt="phone" />
+              <p>218-487-0000</p>
+            </div>
+          </div>
+          <p class="copyright">
+            <span id="copyright-year"> ©2023 </span> | Ukeje Chinemerem Ofozie | WDD230
+          </p>
+        </div>
+      </footer>
+      <script src="./scripts/menu.js"></script>
+      <script src="./scripts/weather.js"></script>
+      <script src="./scripts/script.js"></script>
+    </body>
+  </html>

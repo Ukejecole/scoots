@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoots</title>
+    <meta name="description" content="Scoots- Scooter rental company website"/>
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/scoots_logo-removebg-preview.png" alt="Background Image" />
+      <nav class="primary">
+        <button id="ham">&#9776;</button>
+        <ul id="menu" class="visuallyhidden">
+          <li><a id="home" href="./index.html">Home</a></li>
+          <li><a id="rentals" href="./rentals.html">Rentals</a></li>
+          <li>
+            <a id="reservation" href="./reservation.html">Reservations</a>
+          </li>
+          <li><a id="contact" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+        <main>
+          <section class="contact-hero">
+            <div class="contact-trans-banner">
+              <p>
+                Got questions? We're here to lend a hand. Reach out to us for friendly assistance and support.
+              </p>
+              <a href="/templeinn/temples.html" class="make-reservation view-temps"
+                >Contact Us Today!</a>
+            </div>
+          </section>
+            <div class="contact-info">
+              <div class="locations">
+                <h2>Our Locations</h2>
+                <p>Location 1:<strong> San Miguel de Cozumel, Cozumel</strong></p>
+                <p>Location 2: Address 2, Cozumel</p>
+                <!-- Google Maps Embed - Replace API_KEY with your actual Google Maps API key -->
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59789.690821783246!2d-86.98355560174448!3d20.512141809804028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sng!4v1701531671475!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+              <div class="faq">
+                <h3>FAQ</h3>
+                <details>
+                  <summary>How do I place an order?</summary>
+                  <p>To place an order, visit our website and follow the instructions on the product page.</p>
+                </details>
+                <details>
+                  <summary>What payment methods do you accept?</summary>
+                  <p>We accept Visa, Mastercard, PayPal, and bank transfers.</p>
+                </details>
+                <details>
+                  <summary>Do you offer international shipping?</summary>
+                  <p>Yes, we provide international shipping to selected countries. Please check our shipping policy for more details.</p>
+                </details>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h2>Get In Touch</h2>
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </main>
+         <footer>
+          <div class="footer-container">
+            <div class="footer-form">
+            <div class="footer-address-display">
+            <h3>SCOOTS</h3>
+            <div class="footer-socials">
+            <a href="http://facebook.com" target="_blank"
+              ><img src="./images/Facebook.png" alt="facebook"
+            /></a>
+            <a href="http://instagram.com" target="_blank"
+              ><img src="./images/Instagram.png" alt="instagram"
+            /></a>
+          </div>
+          <div class="footer-address">
+            <img src="./images/location-icon.png" alt="location" />
+            <p>
+              Cozumel, Quintana Roo, Mexico
+            </p>
+          </div>
+          <div class="footer-phone">
+            <img src="./images/phone-icon.png" alt="phone" />
+            <p>218-487-0000</p>
+          </div>
+        </div>
+        <p class="copyright">
+          <span id="copyright-year"> ©2023 </span> | Ukeje Chinemerem Ofozie | WDD230
+        </p>
+      </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

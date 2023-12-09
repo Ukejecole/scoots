@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoots</title>
+    <meta name="description" content="Scoots- Scooter rental company website"/>
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/scoots_logo-removebg-preview.png" alt="Background Image" />
+      <nav class="primary">
+        <button id="ham">&#9776;</button>
+        <ul id="menu" class="visuallyhidden">
+          <li><a id="home" href="./index.html">Home</a></li>
+          <li><a id="rentals" href="#">Rentals</a></li>
+          <li>
+            <a id="reservation" href="./reservation.html">Reservations</a>
+          </li>
+          <li><a id="contact" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+  <h2>Rental Prices</h2>
+
+  <table id="rentalTable">
+    <thead>
+      <tr>
+        <th>Rental Type</th>
+        <th>Max. Persons</th>
+        <th>Reservation Half Day (3 hrs)</th>
+        <th>Reservation Full Day</th>
+        <th>Walk-In Half Day (3 hrs)</th>
+        <th>Walk-In Full Day</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table body content will be inserted dynamically using JavaScript -->
+    </tbody>
+  </table>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-form">
+          <h3>Contact Us</h3>
+          <form action="./thankyou.html" method="get">
+            <label>
+              FULL-NAME <input type="text" name="fullname" required
+            /></label>
+            <label> E-MAIL <input type="email" name="email" required /></label>
+            <label>
+              YOUR MESSAGE
+              <textarea
+                name="contact-message"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <input
+              class="footer-form-button"
+              type="submit"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <div class="footer-address-display">
+          <h3>SCOOTS</h3>
+          <div class="footer-socials">
+            <a href="http://facebook.com" target="_blank"
+              ><img src="./images/Facebook.png" alt="facebook"
+            /></a>
+            <a href="http://instagram.com" target="_blank"
+              ><img src="./images/Instagram.png" alt="instagram"
+            /></a>
+          </div>
+          <div class="footer-address">
+            <img src="./images/location-icon.png" alt="location" />
+            <p>
+              Cozumel, Quintana Roo, Mexico
+            </p>
+          </div>
+          <div class="footer-phone">
+            <img src="./images/phone-icon.png" alt="phone" />
+            <p>218-487-0000</p>
+          </div>
+        </div>
+        <p class="copyright">
+          <span id="copyright-year"> ©2023 </span> | Ukeje Chinemerem Ofozie | WDD230
+        </p>
+      </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/rentals.js"></script>
+  </body>
+</html>
