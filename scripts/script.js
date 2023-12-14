@@ -174,3 +174,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   // });
 });
 
+document.getElementById('scrollBtn').addEventListener('click', function() {
+  // Scroll to the footer
+  document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+});
